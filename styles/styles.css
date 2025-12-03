@@ -1,3 +1,4 @@
+/* Global text styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
@@ -8,19 +9,21 @@ h1 {
     font-weight: 700;
 }
 
-body{
+body {
     margin: 0;
+    background-color: #F3E5AB;
 }
 
 body, p, a, li {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Nav */
 nav {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 0 20px;
     height: 75px;
     overflow: hidden;
@@ -46,10 +49,11 @@ nav {
     z-index: 2;
     border-radius: 5px;
 }
+
 .nav-links {
     display: flex;
     gap: 20px;
-    z-index: 1; 
+    z-index: 1;
     margin: 0 auto;
 }
 
@@ -57,18 +61,10 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    position: relative; 
+    position: relative;
 }
 
-body{
-    background-color: #F3E5AB;
-}
-
-footer{
-    background-color: #C47A3C;
-    padding: 50px;  
-}
-
+/* About section */
 #about-section, #home-section {
     max-width: 700px;
     margin: 80px auto;
@@ -91,6 +87,12 @@ footer{
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #C47A3C;
+    padding: 50px;
 }
 
 .footer-links {
