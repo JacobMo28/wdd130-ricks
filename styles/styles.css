@@ -89,6 +89,158 @@ nav {
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
+/* Recipe Page */
+#recipe-section {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.recipe-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recipe-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.recipe-info p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.ingredients-cookware-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.ingredients-section {
+    flex: 1;
+}
+
+.ingredients-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #C47A3C;
+}
+
+.ingredients-list ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.ingredients-list li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.cookware-section {
+    flex: 1;
+}
+
+.cookware-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #C47A3C;
+}
+
+.cookware-list ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.cookware-list li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.recipe-divider {
+    border: none;
+    border-top: 3px solid #C47A3C;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.recipe-step {
+    margin-bottom: 40px;
+}
+
+.recipe-step h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #C47A3C;
+}
+
+.recipe-step p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.step-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.recipe-tips {
+    background-color: #E8D5A1;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.recipe-tips h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #C47A3C;
+}
+
+.recipe-tips ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.recipe-tips li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.jump-to-top {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.jump-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #C47A3C;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.jump-button:hover {
+    background-color: #A66530;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
 /* Footer */
 footer {
     background-color: #C47A3C;
