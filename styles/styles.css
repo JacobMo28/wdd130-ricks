@@ -1,3 +1,4 @@
+/* Global text styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
@@ -8,19 +9,21 @@ h1 {
     font-weight: 700;
 }
 
-body{
+body {
     margin: 0;
+    background-color: #F3E5AB;
 }
 
 body, p, a, li {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Nav */
 nav {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 0 20px;
     height: 75px;
     overflow: hidden;
@@ -46,10 +49,11 @@ nav {
     z-index: 2;
     border-radius: 5px;
 }
+
 .nav-links {
     display: flex;
     gap: 20px;
-    z-index: 1; 
+    z-index: 1;
     margin: 0 auto;
 }
 
@@ -57,18 +61,10 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    position: relative; 
+    position: relative;
 }
 
-body{
-    background-color: #F3E5AB;
-}
-
-footer{
-    background-color: #C47A3C;
-    padding: 50px;  
-}
-
+/* About section */
 #about-section, #home-section {
     max-width: 700px;
     margin: 80px auto;
@@ -93,108 +89,167 @@ footer{
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
+/* Recipe Page */
+#recipe-section {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.recipe-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recipe-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.recipe-info p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.ingredients-cookware-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.ingredients-section {
+    flex: 1;
+}
+
+.ingredients-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #C47A3C;
+}
+
+.ingredients-list ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.ingredients-list li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.cookware-section {
+    flex: 1;
+}
+
+.cookware-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #C47A3C;
+}
+
+.cookware-list ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.cookware-list li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.recipe-divider {
+    border: none;
+    border-top: 3px solid #C47A3C;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.recipe-step {
+    margin-bottom: 40px;
+}
+
+.recipe-step h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #C47A3C;
+}
+
+.recipe-step p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.step-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.recipe-tips {
+    background-color: #E8D5A1;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.recipe-tips h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #C47A3C;
+}
+
+.recipe-tips ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.recipe-tips li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.jump-to-top {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.jump-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #C47A3C;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.jump-button:hover {
+    background-color: #A66530;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #C47A3C;
+    padding: 50px;
+}
+
 .footer-links {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-/* -----------------------------
-   RECIPIE PAGE ONLY
-   (styles apply ONLY if body has id="casserole-page")
------------------------------- */
-
-#casserole-page {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F3E5AB;
-    padding-bottom: 40px;
-}
-
-/* ---------- NAV BAR ---------- */
-#casserole-page nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: #fff;
-    border-bottom: 1px solid #ccc;
-}
-
-#casserole-page #nav-casseroll-image {
-    width: 80px;
-}
-
-#casserole-page nav .logo img {
-    height: 50px;
-}
-
-#casserole-page .nav-links a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-}
-
-/* ---------- RECIPE CONTENT ---------- */
-#casserole-page #recipie {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-}
-
-#casserole-page #recipie h1 {
-    margin-bottom: 20px;
-}
-
-#casserole-page #recipie h2 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-/* ---------- INSTRUCTION STEPS ---------- */
-#casserole-page .instruction-step {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin: 25px 0;
-    border-radius: 8px;
-}
-
-#casserole-page .step-number {
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-#casserole-page .step-text {
-    margin-bottom: 12px;
-}
-
-/* ---------- STEP IMAGES ---------- */
-#casserole-page .instruction-step img {
-    width: 100%;
-    max-width: 350px;
-    display: block;
-    margin: 10px auto;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-#casserole-page .instruction-step img + img {
-    margin-top: 10px;
-}
-
-/* ---------- FOOTER ---------- */
-#casserole-page footer {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: center;
-    background: #fff;
-    border-top: 1px solid #ccc;
-}
-
-#casserole-page .footer-links a {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
 }
