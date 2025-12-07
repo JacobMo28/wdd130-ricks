@@ -99,3 +99,102 @@ footer{
     flex-direction: column;
     gap: 5px;
 }
+
+/* -----------------------------
+   RECIPIE PAGE ONLY
+   (styles apply ONLY if body has id="casserole-page")
+------------------------------ */
+
+#casserole-page {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F3E5AB;
+    padding-bottom: 40px;
+}
+
+/* ---------- NAV BAR ---------- */
+#casserole-page nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+#casserole-page #nav-casseroll-image {
+    width: 80px;
+}
+
+#casserole-page nav .logo img {
+    height: 50px;
+}
+
+#casserole-page .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* ---------- RECIPE CONTENT ---------- */
+#casserole-page #recipie {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+#casserole-page #recipie h1 {
+    margin-bottom: 20px;
+}
+
+#casserole-page #recipie h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* ---------- INSTRUCTION STEPS ---------- */
+#casserole-page .instruction-step {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 25px 0;
+    border-radius: 8px;
+}
+
+#casserole-page .step-number {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#casserole-page .step-text {
+    margin-bottom: 12px;
+}
+
+/* ---------- STEP IMAGES ---------- */
+#casserole-page .instruction-step img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#casserole-page .instruction-step img + img {
+    margin-top: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+#casserole-page footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+
+#casserole-page .footer-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
